@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+      <title>Ana Sayfa</title>   
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" class="active">Ana Sayfa</a>
+      <a href="about.html">Hakkımda</a>
+      <a href="contact.html">İletişim</a>
+    </nav>
+
+    <main>
+      <h1>Merhaba, ben Berat</h1>
+      <p>
+        1. Sınıf Bilgisayar Mühendisliği öğrencisiyim.
+        Bu projeyi Bilgisayar Mühendisliği Dersi kapsamında oluşturdum.
+      </p>
+
+      <p>
+        Bu sitede:
+      </p>
+
+      <ul>
+        <li>Hakkımda genel bilgiler</li>
+        <li>İlgi alanlarım ve hobilerim</li>
+        <li>Benimle iletişime geçebileceğiniz bir sayfa</li>
+      </ul>
+
+      <hr>
+
+      <section id="game">
+        <h2>Taş Kağıt Makas Vakti</h2>
+      
+        <p>
+          JavaScript kullanmam gerekiyordu, o yüzden taş kağıt makas oyunu yapmak istedim.
+        </p>
+      
+        <div class="choices">
+          <button onclick="play('Taş')">
+            <img src="assets/icons/tas.png" alt="Taş">
+          </button>
+
+          <button onclick="play('Kağıt')">
+            <img src="assets/icons/kagit.png" alt="Kağıt">
+          </button>
+        
+          <button onclick="play('Makas')">
+            <img src="assets/icons/makas.png" alt="Makas">
+          </button>
+        </div>
+      
+        <p id="result"></p>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <button onclick="easterEgg()" id="footerText">© 2025 Berat</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
